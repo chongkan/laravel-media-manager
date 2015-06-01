@@ -1,0 +1,22 @@
+{
+    "name": "chongkan/media-manager",
+    "description": "",
+    "authors": [
+        {
+            "name": "Eduardo Chongkan",
+            "email": "eduardo@chongkan.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/Chongkan/MediaManager/Models"
+        ],
+        "psr-0": {
+            "Chongkan\\MediaManager\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
