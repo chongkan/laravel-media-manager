@@ -1,5 +1,6 @@
 <?php
 
+namespace Chongkan\MediaManager\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Application & Route Filters
@@ -18,8 +19,8 @@
 |--------------------------------------------------------------------------
 | To parse responses
 */
+
 \Route::filter('CKPositions', function($route, $request, $response){
     $path = $route->getPath();
-    dd();
-    CKPositions::render($response, $path);
+    MediasController::render($response, $path);
 });

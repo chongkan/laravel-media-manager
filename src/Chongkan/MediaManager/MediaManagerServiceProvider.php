@@ -1,5 +1,7 @@
 <?php namespace Chongkan\MediaManager;
 
+use Chongkan\MediaManager\Controllers\MediasController;
+use Chongkan\MediaManager\Facades\MediaManager;
 use Illuminate\Support\ServiceProvider;
 
 class MediaManagerServiceProvider extends ServiceProvider {
@@ -29,9 +31,20 @@ class MediaManagerServiceProvider extends ServiceProvider {
 	{
 		$this->package('chongkan/media-manager');
 
+        // Bring the application container instance into the local scope so we can
+        // import it into the filters scope.
+        $app = $this->app;
+
+        // Register local Filter handler
+        /*\Route::filter('CKPositions', function($route, $request, $response){
+            $path = $route->getPath();
+            MediasController::render($response, $path);
+        }); */
+
+        include __DIR__.'/filters.php';
         // Include package routes file
         include __DIR__.'/routes.php';
-        include __DIR__.'/filters.php';
+
 	}
 
 	/**
