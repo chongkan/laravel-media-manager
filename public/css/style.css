@@ -1,0 +1,18 @@
+.media-thumbnail {
+    height: 150px;
+    line-height: 150px;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 0;
+    text-align: center;
+}
+.media-thumbnail img{
+    width: 100%;
+    vertical-align: middle;
+}
+.directory-listing {
+    padding: 10px;
+}
+.directory-listing .fa.fa-folder {
+
+}

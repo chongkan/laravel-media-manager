@@ -52,7 +52,7 @@ class MediasController extends \BaseController
             'in' => 'The :attribute must be one of the following types: :values',
             'not_in' => 'FB :attribute is empty',
         );
-        $validator = Validator::make($this->formData,
+        $validator = \Validator::make($this->formData,
             array(
                 'file' => 'required'
             ), $messages);
@@ -74,7 +74,7 @@ class MediasController extends \BaseController
      */
     public function upload()
     {
-        $this->formData = Input::only('file');
+        $this->formData = \Input::only('file');
         // Validate Form Data
         $formDataValidator = $this->validatePost();
         if (!$formDataValidator->fails()) {
@@ -108,7 +108,7 @@ class MediasController extends \BaseController
         $fileExtension = strtolower($file->getClientOriginalExtension());
         $input = array('file' => $file);
         $rules = array('file' => 'image');
-        $validator = Validator::make($input, $rules);
+        $validator =\Validator::make($input, $rules);
         $filename = $file->getClientOriginalName();
 
         if ($validator->fails()) {
@@ -118,7 +118,7 @@ class MediasController extends \BaseController
             // File is an image
             $fileLocalPath = 'media/' . $filename;
             $file->move('media/', $filename);
-            $this->log['UploadedFile']['processMediaFile_URL'] = asset($fileLocalPath, Config::get('app.https'));
+            $this->log['UploadedFile']['processMediaFile_URL'] = asset($fileLocalPath, \Config::get('app.https'));
             return $fileLocalPath;
         }
 

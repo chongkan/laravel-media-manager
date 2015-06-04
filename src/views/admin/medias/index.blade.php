@@ -1,5 +1,6 @@
 @extends('admin::layouts.master')
 
+
 @section('content-header')
     <h1>
         Media
@@ -10,7 +11,7 @@
 @stop
 @section('style')
     @parent
-    <link rel="stylesheet" href="{{ admin_asset('css/dropzone.css') }}">
+    {{ mediaManager_style('css/dropzone.css') }}"
 @stop
 @section('content')
     @if(Session::has('message'))
@@ -57,8 +58,8 @@
 
 @section('script')
     @parent
-    <script src="{{ admin_asset('js/dropzone.js') }}"></script>
-    <script src="{{ admin_asset('js/jquery.form.min.js') }}"></script>
+    <script src="{{ mediaManager_asset('js/dropzone.js') }}"></script>
+    <script src="{{ mediaManager_asset('js/jquery.form.min.js') }}"></script>
     <script>
         Dropzone.autoDiscover = false;
 
