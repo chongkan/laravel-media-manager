@@ -62,3 +62,9 @@ Laravel 4.2 Media Manager for Blade Templates
 
     a. You can assign more than one file to the same position and specify the orden in which they appear.   
     b. You can use CSS classes to manipulate, hide/show files in the same position.   
+    
+    
+#References  
+
+PingPong Admin Package: https://github.com/pingpong-labs/admin  
+
