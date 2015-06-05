@@ -60,6 +60,7 @@
     @parent
     <script src="{{ mediaManager_asset('js/dropzone.js') }}"></script>
     <script src="{{ mediaManager_asset('js/jquery.form.min.js') }}"></script>
+    <script src="{{ mediaManager_asset('js/all.js') }}"></script>
     <script>
         Dropzone.autoDiscover = false;
 
