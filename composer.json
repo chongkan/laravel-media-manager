@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "pingpong/admin": "~2.0"
+        "pingpong/admin": "1.1.*"
     },
     "autoload": {
         "classmap": [

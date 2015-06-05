@@ -1,29 +1,39 @@
 # Media Manager
 Laravel 4.2 Media Manager for Blade Templates
 
-# Installation
+### Installation
 
 1. Add the package to your composer.json file:    
 
+   ```
     "require": {  
         "chongkan/media-manager" : 'dev-master'  
     }  
+   ```
 
 2. Install the package:    
 
-    local-machine$ composer install  
+    ```
+    local-machine$ composer install 
+    ``` 
 
 3. Publish the package assets to your public folder, so they are available to the views:  
  
-    $ php artisan asset:publish chongkan/media-manager  
+    ```
+    $ php artisan asset:publish chongkan/media-manager
+    ```  
     
 4. Run the migrations:   
   
+    ```
     $ php artisan migrate --package="chongkan/media-manager"  
+    ```
 
 5. Add the Service Provider, in the app/config/app.php, at the following line at the end of the 'providers' array:  
 
-    'Chongkan\MediaManager\MediaManagerServiceProvider'  
+    ```
+    'Chongkan\MediaManager\MediaManagerServiceProvider'
+    ```  
 
 6. Test your installation, navigate to:
 
@@ -33,13 +43,13 @@ Laravel 4.2 Media Manager for Blade Templates
     
     ![Test your Setup](http://chongkan.com/shares/permanent/2015-06-05_1139.png)
 
-# Post Installation  
+### Post Installation  
 
 1. Add an admin menu.
 
     Extend the PingPong Package menu file.   
 
-# Usage    
+### Usage    
     
 1. Drop files to the Drag and Drop area. 
 
@@ -64,7 +74,10 @@ Laravel 4.2 Media Manager for Blade Templates
     b. You can use CSS classes to manipulate, hide/show files in the same position.   
     
     
-#References  
+###References  
 
 PingPong Admin Package: https://github.com/pingpong-labs/admin  
 
+###License  
+
+This package is open-sourced software licensed under [The BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause)
