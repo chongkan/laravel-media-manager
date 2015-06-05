@@ -31,7 +31,7 @@ Laravel 4.2 Media Manager for Blade Templates
     
     You should be redirected to the PingPong Admin Login page if not already logged in, if logged in, you should get the medias package interface.
     
-    http://chongkan.com/shares/permanent/2015-06-05_1139.png
+    ![Test your Setup](http://chongkan.com/shares/permanent/2015-06-05_1139.png)
 
 # Post Installation  
 
@@ -39,23 +39,24 @@ Laravel 4.2 Media Manager for Blade Templates
 
     Extend the PingPong Package menu file.   
 
-# Usage Installation  
+# Usage    
     
 1. Drop files to the Drag and Drop area. 
 
-    http://chongkan.com/shares/permanent/2015-06-05_1144.png  
+    ![Drop Files](http://chongkan.com/shares/permanent/2015-06-05_1144.png)  
     
 2. Click on a file to assign it to a position and assign CSS, Order and Publishing dates to it. 
 
-    http://chongkan.com/shares/permanent/2015-06-05_1145.png  
+    ![Editing Image assignments](http://chongkan.com/shares/permanent/2015-06-05_1145.png)  
     
-3. In your Views, insert the media file as: 
+3. In your Views, define the positions to insert the media file at: 
 
     [[mediaPosition myPicture]]  
     
     e.g.   
     
-    http://chongkan.com/shares/permanent/2015-06-05_1148.png  
+    ![Defining a position in your blades](http://chongkan.com/shares/permanent/2015-06-05_1148.png)
+     
 
 4. Tips:  
 
