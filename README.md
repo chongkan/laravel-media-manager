@@ -9,7 +9,7 @@ Laravel 4.2 Media Manager for Blade Templates
     "repositories": [
       {
         "type": "vcs",
-        "url": "https://github.com/chongkan/media-manager"
+        "url": "https://github.com/chongkan/laravel-media-manager"
       }
     ],
    ```    
