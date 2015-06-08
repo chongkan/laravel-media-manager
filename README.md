@@ -6,6 +6,15 @@ Laravel 4.2 Media Manager for Blade Templates
 1. Add the package to your composer.json file:    
 
    ```
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/chongkan/media-manager"
+      }
+    ],
+   ```    
+
+   ```
     "require": {  
         "chongkan/media-manager" : 'dev-master'  
     }  
